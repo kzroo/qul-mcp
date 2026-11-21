@@ -1,9 +1,15 @@
 # qul-mcp
 
 An [MCP](https://modelcontextprotocol.io) server and agent skill for the
-[Quranic Universal Library (QUL)](https://qul.tarteel.ai) by Tarteel. It lets
-Claude and other MCP clients look up Quran text, translations, tafsir,
-word-by-word data and recitation audio.
+[Quranic Universal Library (QUL)](https://qul.tarteel.ai) by Tarteel. It gives
+Claude and other MCP clients Quran text, translations, tafsir, word-by-word data
+and recitation audio, for two jobs:
+
+- **Building apps with Islamic content.** Coding agents look up real resource
+  IDs, response shapes, fonts and recitations with ayah timings while they
+  build, instead of guessing them or typing Quran text from memory.
+- **Answering questions.** Assistants quote ayahs, translations and tafsir
+  exactly as QUL returns them, and name the source.
 
 It is read-only and needs no API key. It calls QUL's public JSON API at
 `https://qul.tarteel.ai/api/v1`.
